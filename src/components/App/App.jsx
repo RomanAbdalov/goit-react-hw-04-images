@@ -53,7 +53,7 @@ export const App = () => {
     setPage(prevPage => prevPage + 1);
   };
 
-  const showLoadMoreButton = images.length !== 0 && page < totalPages;
+  const showLoadMoreButton = page < totalPages;
   return (
     <Container>
       <Searchbar onSubmit={handleSearch} />
